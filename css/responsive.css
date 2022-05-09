@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+}
+.container{
+    padding: 15px;
+}
+.row h1{
+    text-align: center;
+    text-shadow: 1px 2px 1px rgb(217, 214, 214);
+    text-decoration: underline;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+}
+#photo img{
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 4px 3px rgb(180, 171, 171);
+}
+#photo img:hover{
+    transform: rotate(0.5turn);
+    filter:brightness(0.8);
+}
+#tran{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid rgb(238, 234, 234);
+    border-radius: 5px;
+    position: relative;
+    margin-left: 1rem;
+    animation-name: move;
+    animation-duration: 7s;
+    animation-delay: 10ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+input[type="button"]{
+    background-color: transparent;
+    color:black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px 45px;
+}
+input[type="button"]:hover{
+    background-color: rgba(47, 0, 255,0.8);
+    color:white;
+    border:0.225rem solid black;
+    box-shadow: 10px 4px 10px rgb(175, 182, 182);
+}
+@keyframes move{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:600px; top:0px;}
+    50%  {background-color:blue; left:600px; top:300px;}
+    75%  {background-color:green; left:0px; top:300px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+@keyframes move2{
+    0%   {background-color:red; left:0px; top:0px;}
+    100%  {background-color:yellow; left:435px; top:0px;}
+}
+
+/*Responsive css*/
+@media only screen and (max-width: 1024px){
+    #photo img{
+        padding-right: 5rem;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    input[type="button"]{
+        margin: auto;
+        text-align: center;
+    }
+    #tran{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 2rem;
+        animation-name: move2;
+        animation-duration: 5s;
+    }
+}

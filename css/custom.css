@@ -1,5 +1,19 @@
+:root {  
+    --clr-primary: #ee6352;
+    --clr-secondary: #d16e8d;
+    --clr-accent: #F7F7FF;
+    --clr-gradient: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+    --ff-title: bungee, sans-serif;
+    --ff-body: canada-type-gibson,sans-serif;
+    --fw-body: 300;
+    --fw-bold: 800;
+    --fw-title: 400;
+    --fw-number: 800;
+  }
+
 .container{
     max-width: 1280px;
+    color: var(--clr-primary);
 }
 .row{
     display: flex;

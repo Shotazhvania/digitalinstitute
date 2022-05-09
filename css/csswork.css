@@ -1,0 +1,85 @@
+:root{
+    --primary-color:blue;
+    --secondary-color:black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@font-face {
+    font-family: shota;
+    src: url(https://shotazhvania.dev/fonts/CallingCode-Regular.ttf);
+}
+/*
+body{
+    background-image: url("https://shotazhvania.dev/images/resource/banner-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}*/
+
+html,body{
+    background-color: rgb(220, 216, 216);
+    overflow-x: hidden;
+    font-family: shota;
+}
+
+h1:lang(EN_US){
+    color:red
+}
+
+#margin{
+    margin-top: 10vh;
+}
+ul li{
+    list-style: none;
+}
+#imgwork{
+    margin-top: 2rem;
+    vertical-align: middle;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.col-md-6 img{
+    width: 100%;
+    border-radius: 10px;
+    filter: brightness(0.9);
+    object-fit: cover;
+}
+.col-md-6 img:hover{
+    box-shadow: 0 0 6px rgb(35 173 255);
+}
+
+h3{
+    color:red;
+    background-color: transparent;
+    text-shadow: 4px -3px 6px rgb(219 209 209);
+}
+ul{
+    border-width: 6px;
+    border-style: groove;
+    border-color: red;
+    border-image: url(https://www.w3schools.com/css/border.png) 25 stretch;
+    border-radius: 15px;
+    padding-bottom:70px;
+    padding-top: 70px;
+    width: 50%;
+}
+iframe{
+    margin: 1rem 0rem 1rem 0rem;
+    border: 1px solid red;
+    display: flex;
+}
+
+#transform{
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    margin: auto;
+}
+.col-md-6:first-child{
+    box-shadow: 10px 5px 4px gray;
+}
+#transform:hover{
+    transform: scale(4,5);
+}
